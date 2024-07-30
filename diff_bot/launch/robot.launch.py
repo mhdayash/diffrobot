@@ -66,19 +66,19 @@ def generate_launch_description():
     delayed_diff_drive_spawner = create_delayed_controller_spawner(controller_manager_node, diff_drive_spawner_node)
     delayed_joint_broad_spawner = create_delayed_controller_spawner(controller_manager_node, joint_broad_spawner_node)
     
-    # lidar = Node(
-    #         node_name='rplidar_composition',
-    #         package='rplidar_ros',
-    #         node_executable='rplidar_composition',
-    #         output='screen',
-    #         parameters=[{
-    #             'serial_port': '/dev/ttyUSB0',
-    #             'serial_baudrate': 115200,  # A1 / A2
-    #             # 'serial_baudrate': 256000, # A3
-    #             'frame_id': 'laser_frame',
-    #             'inverted': False,
-    #             'angle_compensate': True,
-    #         }])
+    lidar = Node(
+            node_name='rplidar_composition',
+            package='rplidar_ros',
+            node_executable='rplidar_composition',
+            output='screen',
+            parameters=[{
+                'serial_port': '/dev/ttyUSB0',
+                'serial_baudrate': 115200,  # A1 / A2
+                # 'serial_baudrate': 256000, # A3
+                'frame_id': 'laser_frame',
+                'inverted': False,
+                'angle_compensate': True,
+            }])
     
     # cmd_vel_mapper = Node(
     #     package="diff_bot",
@@ -91,6 +91,6 @@ def generate_launch_description():
         TimerAction(period=3.0, actions=[controller_manager_node]),  # Delayed start of the controller manager
         delayed_diff_drive_spawner,  # Delayed start of the diff_drive spawner
         delayed_joint_broad_spawner,  # Delayed start of the joint_broad spawner
-        # lidar,
+        lidar,
         # cmd_vel_mapper
     ])

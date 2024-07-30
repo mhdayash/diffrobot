@@ -35,6 +35,8 @@ endif()
 install(
   DIRECTORY
   urdf
+  world
+  rviz
   launch
   config
   DESTINATION
