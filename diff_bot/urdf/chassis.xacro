@@ -12,8 +12,12 @@
             <material name="green"/>
         </visual>
         <collision>
+            <geometry>
+                <cylinder radius="${chassis_length}" length="${chassis_height}"/>
+            </geometry>
             <origin xyz="0.155 0.0 ${chassis_height/2}"/>
         </collision>
+        
         <xacro:inertial_box mass="${chassis_mass}" x="${chassis_length}" y="${chassis_width}" z="${chassis_height}">
             <origin xyz="${chassis_length/2} 0 ${chassis_height/2}" rpy="0 0 0"/>
         </xacro:inertial_box>
@@ -27,7 +31,7 @@
     </joint>
 
     <gazebo reference="chassis_link">
-        <material> Gazebo/Grey </material>
+        <material> Gazebo/Red </material>
     </gazebo>
 
 
