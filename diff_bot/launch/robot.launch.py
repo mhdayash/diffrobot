@@ -80,11 +80,11 @@ def generate_launch_description():
                 'angle_compensate': True,
             }])
     
-    # cmd_vel_mapper = Node(
-    #     package="diff_bot",
-    #     executable="cmd_vel_mapper",
-    #     output="screen"
-    # )
+    cmd_vel_mapper = Node(
+        package="diff_bot",
+        executable="cmd_vel_mapper",
+        output="screen"
+    )
     
     return LaunchDescription([
         rsp_launch,  # Include rsp.launch.py
@@ -92,5 +92,5 @@ def generate_launch_description():
         delayed_diff_drive_spawner,  # Delayed start of the diff_drive spawner
         delayed_joint_broad_spawner,  # Delayed start of the joint_broad spawner
         lidar,
-        # cmd_vel_mapper
+        cmd_vel_mapper
     ])

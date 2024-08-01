@@ -13,7 +13,7 @@ def generate_launch_description():
     localization_config_file = 'amcl_config.yaml'
     
     # nav2_yaml = os.path.join(get_package_share_directory(package_name), 'config', 'house7.yaml')
-    map_file = os.path.join(get_package_share_directory(package_name), 'config', 'house7.yaml') #change to your map
+    map_file = os.path.join(get_package_share_directory(package_name), 'config', 'obs_map.yaml') #change to your map
     rviz_config_file = os.path.join(get_package_share_directory(package_name), "rviz", "nav.rviz")
     controller_yaml = os.path.join(get_package_share_directory('bot_nav'), 'config', 'controller.yaml')
     bt_navigator_yaml = os.path.join(get_package_share_directory('bot_nav'), 'config', 'bt_navigator.yaml')
