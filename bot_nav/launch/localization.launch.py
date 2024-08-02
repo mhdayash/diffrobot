@@ -7,7 +7,7 @@ def generate_launch_description():
     package_name = "bot_nav"
     config_dir = os.path.join(get_package_share_directory(package_name), "config")
     localization_config_file = 'amcl_config.yaml'
-    map_file = "house7.yaml"
+    map_file = "obs_map.yaml"
 
     map_server = Node(
 

@@ -9,7 +9,7 @@ Panels:
         - /Path1
         - /Map2
       Splitter Ratio: 0.5
-    Tree Height: 439
+    Tree Height: 363
   - Class: rviz_common/Selection
     Name: Selection
   - Class: rviz_common/Tool Properties
@@ -187,9 +187,9 @@ Visualization Manager:
       Enabled: true
       Invert Rainbow: false
       Max Color: 255; 255; 255
-      Max Intensity: 0
+      Max Intensity: 47
       Min Color: 0; 0; 0
-      Min Intensity: 0
+      Min Intensity: 47
       Name: LaserScan
       Position Transformer: XYZ
       Selectable: true
@@ -355,25 +355,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 6.906992435455322
+      Distance: 6.2401323318481445
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 11.9646577835083
-        Y: 0.5802266597747803
-        Z: -0.003449677722528577
+        X: 0.1299898624420166
+        Y: 0.007431035861372948
+        Z: 0.04581483453512192
       Focal Shape Fixed Size: false
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 1.5697963237762451
+      Pitch: 1.4797964096069336
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 1.378577709197998
+      Yaw: 1.5735780000686646
     Saved: ~
 Window Geometry:
   Displays:
